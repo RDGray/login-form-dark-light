@@ -8,6 +8,8 @@ function App() {
 
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
+    // const newIcon = (document.querySelector("#themeIcon").classList =
+    // newTheme === "light" ? "fas fa-sun" : "fas fa-moon");
 
     setTheme(newTheme);
   };
@@ -45,7 +47,7 @@ function App() {
         </div>
         <div className="theme-toggle">
           <h2 className="theme__info">{theme}</h2>
-          <i onClick={switchTheme} className="fas fa-sun"></i>
+          <i id="themeIcon" onClick={switchTheme} className="fas fa-sun"></i>
         </div>
       </div>
     </div>
